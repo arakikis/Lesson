@@ -5,14 +5,8 @@ public class Kuku {
 		System.out.println("九九の練習");
 
 		int ram1 = new java.util.Random().nextInt(9)+1;
-		System.out.print(ram1);
-
-		System.out.print("×");
-
 		int ram2 = new java.util.Random().nextInt(9)+1;
-		System.out.print(ram2);
-
-		System.out.print("＝");
+		System.out.print(ram1 + "×" + ram2 + "＝");
 
 		int num = new java.util.Scanner(System.in).nextInt();
 
