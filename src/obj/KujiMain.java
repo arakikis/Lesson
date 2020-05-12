@@ -1,28 +1,24 @@
 package obj;
 
+import java.util.ArrayList;
+
 public class KujiMain {
 
 	public static void main(String[] args) {
 
-		Kuji k1 =new Kuji();
-		k1.bangou =123456;
+		ArrayList<Kuji> Klist = new ArrayList<Kuji>();
 
-		Kuji k2 =new Kuji();
-		k2.bangou =101012;
+		Klist.add(new Kuji(123456));
+		Klist.add(new Kuji(101012));
+		Klist.add(new Kuji(654321));
 
-		Kuji k3 =new Kuji();
-		k3.bangou =654321;
+		KujiChecker kc = new KujiChecker();
+		for (Kuji k : Klist) {
+			kc.check(k);
+			k.show();
+		}
 
-		KujiChecker kc =new KujiChecker();
-		kc.check(k1);
-		kc.check(k2);
-		kc.check(k3);
-
-		k1.show();
-		k2.show();
-		k3.show();
-
-		System.out.println("合計"+ kc.kingaku+ "円");
+		System.out.println("合計" + kc.kingaku + "円");
 	}
 
 }

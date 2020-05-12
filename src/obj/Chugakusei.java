@@ -8,8 +8,8 @@ public class Chugakusei extends Seito {
 		this.eigo = eigo;
 	}
 	public void show() {
-		System.out.println(super.name+" "+ "国語"+super.kokugo+"点"
-				+" "+ "算数"+super.sansu+"点"+" "+ "社会"+super.syakai+"点"+" "+ "英語"+this.eigo+"点");
+		System.out.println(super.getName()+" "+ "国語"+super.getKokugo()+"点"
+				+" "+ "算数"+super.getSansu()+"点"+" "+ "社会"+super.getSyakai()+"点"+" "+ "英語"+this.eigo+"点");
 		System.out.println("合計 "+this.goukei()+"点" +" "+"平均"+ this.heikin()+"点");
 	}
 

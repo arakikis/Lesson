@@ -1,11 +1,28 @@
 package obj;
 
 public class Seito {
-	String name;
-	int kokugo;
-	int sansu;
-	int syakai;
+	private String name;
+	private int kokugo;
+	private int sansu;
+	private int syakai;
 
+
+
+	public String getName() {
+		return name;
+	}
+
+	public int getKokugo() {
+		return kokugo;
+	}
+
+	public int getSansu() {
+		return sansu;
+	}
+
+	public int getSyakai() {
+		return syakai;
+	}
 
 	public Seito(String name, int kokugo, int sansu, int syakai) {
 		this.name = name;

@@ -8,4 +8,10 @@ public class Kuji {
 		System.out.println(bangou+" "+kekka);
 	}
 
+	public Kuji(int bangou) {
+		this.bangou = bangou;
+
+	}
+
+
 }

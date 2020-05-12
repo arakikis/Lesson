@@ -1,8 +1,12 @@
+import java.util.Arrays;
 
 public class Hairetu3 {
 
 	public static void main(String[] args) {
 		int[] nums = { 8, 5, 9, 2, 4 };
+		Arrays.sort(nums);
+
+		//Arrays.fill(nums, 10);
 
 		for (int n : nums) {
 			System.out.println(n);
