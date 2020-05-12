@@ -8,6 +8,10 @@ public class MemberSales extends Sales {
 		this.getSouryou = getSouryou;
 	}
 	public int getSouryou() {
+		System.out.println();
+
+
+
 
 	}
 
